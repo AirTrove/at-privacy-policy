@@ -1,173 +1,459 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>airtrove T&C</title>
-    <meta name="author" content="Xmartlabs" />
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<!DOCTYPE html>
+<html style="opacity: 1;" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta charset="utf-8" /><!-- utf-8 works for most cases -->
+   <meta content="width=device-width" name="viewport" /><!-- Forcing initial-scale shouldn't be necessary -->
+   <meta content="IE=edge" http-equiv="X-UA-Compatible" /><!-- Use the latest (edge) version of IE rendering engine -->
+   <meta name="x-apple-disable-message-reformatting" /><!-- Disable auto-scale in iOS 10 Mail entirely -->
+   <title>AirTrove</title>
+   <!-- The title tag shows in email notifications, like Android 4.4. --><!-- Web Font / @font-face : BEGIN --><!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. --><!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. --><!--[if mso]>
+<style>
+* {
+font-family: sans-serif !important;
+}
+</style>
+<![endif]--><!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ --><!--[if !mso]><!--><!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> --><!--<![endif]--><!-- Web Font / @font-face : END --><!-- CSS Reset -->
+   <style type="text/css">/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+      /* What is does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin:0 !important;
+      }
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+      /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+      }
+      table table table {
+        table-layout: auto;
+      }
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode:bicubic;
+      }
+      /* What it does: A work-around for iOS meddling in triggered links. */
+      *[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+      /* What it does: A work-around for Gmail meddling in triggered links. */
+      .x-gmail-data-detectors,
+      .x-gmail-data-detectors *,
+      .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+      }
+      /* What it does: Prevents Gmail from displaying an download button on large, non-linked images. */
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+      /* If the above doesn't work, add a .g-img class to any image in question. */
+      img.g-img + div {
+        display:none !important;
+      }
+      /* What it does: Prevents underlining the button text in Windows 10 */
+      .button-link {
+        text-decoration: none !important;
+      }
+      /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+      /* Create one of these media queries for each additional viewport size you'd like to fix */
+      /* Thanks to Eric Lepetit @ericlepetitsf) for help troubleshooting */
+      @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+        /* iPhone 6 and 6+ */
+        .email-container {
+          min-width: 375px !important;
+        }
+      }
+   </style>
+   <!-- Progressive Enhancements -->
+   <style type="text/css">/* What it does: Hover styles for buttons */
+      /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover,
+        .button-a:hover {
+            background: #002d5b !important;
+            border-color: #002d5b !important;
+        }
+      /* Media Queries */
+      @media screen and (max-width: 600px) {
+        .email-container {
+          width: 100% !important;
+          margin: auto !important;
+        }
+        /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+        .fluid {
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        /* What it does: Forces table cells into full-width rows. */
+        .stack-column,
+        .stack-column-center {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+        }
+        /* And center justify these ones. */
+        .stack-column-center {
+          text-align: center !important;
+        }
+        /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+        .center-on-narrow {
+          text-align: center !important;
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none !important;
+        }
+        table.center-on-narrow {
+          display: inline-block !important;
+        }
+      }
+   </style>
+   <style type="text/css">
+	   
+      @media screen and (max-width: 600px) {
+        .mobile_text{
+          padding: 15px!important;
+        }
+      }
+   </style>
+   
+   <!--[if mso]>
+	<style type="text/css">
+	body, table, td {font-family: Arial, Helvetica, sans-serif !important;}
+	</style>
+	<![endif]-->
+   
+</head>
+<body bgcolor="#CBD4DE" style="margin: 0px;" width="100%">
+<center style="width: 100%; background: #edcbf7; text-align: left;"><!-- Visually Hidden Preheader Text : BEGIN -->
+<div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">Transform your airtime to something valuable
+</div>
+<!-- Visually Hidden Preheader Text : END --><!-- Email Body : BEGIN -->
 
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<table align="center" aria-hidden="true" border="0" cellpadding="0" cellspacing="0" class="email-container" role="presentation" style="margin: auto;" width="600">
+   <tbody>
+      <tr>
+         <td align="center"><a href="https://spothero.app.link/SR2PCoBNjF"><img align="center" alt="" border="0" class="g-img" bgcolor="#ffffff" src="https://res.cloudinary.com/dobnevxtx/image/upload/v1701723976/1-04_l5hofr.svg" style="width: 70%; max-width: 400px; height: 200; font-family: 'Open Sans', Arial, sans-serif;font-size: 15px;line-height: 10px;color: #135aff; font-weight: bold;" width="400" /></a></td>
+      </tr>
+	  <tr>
+		  <td class="mobile_text" bgcolor="#ffffff" style="padding:30px 40px 0 40px; text-align: center; font-family:'Open Sans', sans-serif; font-size: 32px; line-height: 32px; color: #7330d9; font-weight: 800;">Privacy Policy</td>
+	  </tr>
+	  <tr>
+		  <td class="mobile_text" bgcolor="#ffffff" style="padding:10px 60px 0 60px; text-align: left; font-family:'Open Sans', sans-serif; font-size: 16px; line-height: 24px; color: #272727; font-weight: 100;">
+        <p>Last updated: March 21, 2024</p>
+        <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+        <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
+        <h2>Interpretation and Definitions</h2>
+        <h3>Interpretation</h3>
+        <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
+        <h3>Definitions</h3>
+        <p>For the purposes of this Privacy Policy:</p>
+        <ul>
+        <li>
+        <p><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</p>
+        </li>
+        <li>
+        <p><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where &quot;control&quot; means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</p>
+        </li>
+        <li>
+        <p><strong>Application</strong> refers to AirTrove, the software program provided by the Company.</p>
+        </li>
+        <li>
+        <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to MarlinPay LLC, Lagos, Nigeria.</p>
+        </li>
+        <li>
+        <p><strong>Country</strong> refers to:  Nigeria</p>
+        </li>
+        <li>
+        <p><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p>
+        </li>
+        <li>
+        <p><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</p>
+        </li>
+        <li>
+        <p><strong>Service</strong> refers to the Application.</p>
+        </li>
+        <li>
+        <p><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</p>
+        </li>
+        <li>
+        <p><strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</p>
+        </li>
+        <li>
+        <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
+        </li>
+        </ul>
+        <h2>Collecting and Using Your Personal Data</h2>
+        <h3>Types of Data Collected</h3>
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <h4>Contact List</h4>
+        <p>Within our application platform, the Contact List refers to the collection of personal contact information provided by users voluntarily or obtained through their device's address book. This may include names, phone numbers, email addresses, and other contact details.
+        </br></br> Contact information are/will not be extracted/collected without your (platform user's) permission whilst on the platform.
+        </p>
+        <h4>Personal Data</h4>
+        <p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:</p>
+        <ul>
+        <li>
+        <p>Email address</p>
+        </li>
+        <li>
+        <p>First name and last name</p>
+        </li>
+        <li>
+        <p>Phone number</p>
+        </li>
+        <li>
+        <p>Address, State, Province, ZIP/Postal code, City</p>
+        </li>
+        <li>
+        <p>Usage Data</p>
+        </li>
+        </ul>
+        <h4>Usage Data</h4>
+        <p>Usage Data is collected automatically when using the Service.</p>
+        <p>Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
+        <p>When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.</p>
+        <p>We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.</p>
+        <h4>Information Collected while Using the Application</h4>
+        <p>While using Our Application, in order to provide features of Our Application, We may collect, with Your prior permission:</p>
+        <ul>
+          <li><b>Information from your Device's phone book (contacts list)</b></li>
+        <li><b>SMS (Default Messaging App)</b></li>
+        <li><b>Default Phone Dialer</b></li>
+        <li><b>Pictures and other information from your Device's camera and photo library</b></li>
+        </ul>
+        <p>We use this information to provide features of Our Service, to improve and customize Our Service. The information may be uploaded to the Company's servers and/or a Service Provider's server or it may be simply stored on Your device.</p>
+        <p>You can enable or disable access to this information at any time, through Your Device settings but if disabled, some part of the app on your device may malfunction or may not work fully well.</p>
+        <h3>Use of Your Personal Data</h3>
+        <p>The Company may use Personal Data for the following purposes:</p>
+        <ul>
+        <li>
+        <p><strong>To provide and maintain our Service</strong>, including to monitor the usage of our Service.</p>
+        </li>
+        <li>
+        <p><strong>To manage Your Account:</strong> to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.</p>
+        </li>
+        <li>
+        <p><strong>For the performance of a contract:</strong> the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service.</p>
+        </li>
+        <li>
+        <p><strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's <b>push notifications</b> regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.</p>
+        </li>
+        <li>
+        <p><strong>To provide You</strong> with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.</p>
+        </li>
+        <li>
+        <p><strong>To manage Your requests:</strong> To attend and manage Your requests to Us.</p>
+        </li>
+        <li>
+        <p><strong>For business transfers:</strong> We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.</p>
+        </li>
+        <li>
+        <p><strong>For other purposes</strong>: We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience.</p>
+        </li>
+        </ul>
+        <p>We may share Your personal information in the following situations:</p>
+        <ul>
+        <li><strong>With Service Providers:</strong> We may share Your personal information with Service Providers to monitor and analyze the use of our Service,  to contact You.</li>
+        <li><strong>For business transfers:</strong> We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.</li>
+        <li><strong>With Affiliates:</strong> We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.</li>
+        <li><strong>With business partners:</strong> We may share Your information with Our business partners to offer You certain products, services or promotions.</li>
+        <li><strong>With other users:</strong> when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside.</li>
+        <li><strong>With Your consent</strong>: We may disclose Your personal information for any other purpose with Your consent.</li>
+        </ul>
+        <h3>Retention of Your Personal Data</h3>
+        <p>The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p>
+        <p>The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.</p>
+        <h3>Transfer of Your Personal Data</h3>
+        <p>Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.</p>
+        <p>Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.</p>
+        <p>The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.</p>
+        <h3>Delete Your Personal Data</h3>
+        <p>You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.</p>
+        <p>Our Service may give You the ability to delete certain information about You from within the Service.</p>
+        <p>You may update, amend, disable or delete Your information at any time by signing in to Your Account, if you have one, and visiting the account settings section that allows you to manage Your personal information. You may also contact Us to request access to, correct, amend, disable or delete any personal information that You have provided to Us.</p>
+        <p>Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so.</p>
+        <h3>Disclosure of Your Personal Data</h3>
+        <h4>Business Transactions</h4>
+        <p>If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.</p>
+        <h4>Law enforcement</h4>
+        <p>Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).</p>
+        <h4>Other legal requirements</h4>
+        <p>The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:</p>
+        <ul>
+        <li>Comply with a legal obligation</li>
+        <li>Protect and defend the rights or property of the Company</li>
+        <li>Prevent or investigate possible wrongdoing in connection with the Service</li>
+        <li>Protect the personal safety of Users of the Service or the public</li>
+        <li>Protect against legal liability</li>
+        </ul>
+        <h3>Security of Your Personal Data</h3>
+        <p>The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
+        <h2>Children's Privacy</h2>
+        <p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.</p>
+        <p>If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.</p>
+        <h2>Links to Other Websites</h2>
+        <p>Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
+        <p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
+        <h2>Changes to this Privacy Policy</h2>
+        <p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
+        <p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the &quot;Last updated&quot; date at the top of this Privacy Policy.</p>
+        <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+        <h2>Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, You can contact us:</p>
+        <ul>
+        <li>
+        <p>By email: airtroveapp@gmail.com</p>
+        </li>
+        <li>
+        <p>By phone number: +2349061450858</p>
+        </li>
+        </ul>
+		  </td>
+	  </tr>
+	  <tr>
+		  <td class="mobile_text" bgcolor="#ffffff" style="padding:30px 100px 30px 100px; text-align: center; font-family:'Open Sans', sans-serif; font-size: 15px; line-height: 26px; color: #002d5b; font-weight: 100;">
+			<!-- Button : Begin -->
+				<table align="center" aria-hidden="true" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: auto">
+					<tbody>
+				
+					</tbody>
+				</table>
+			<!-- Button : END -->
+		  </td>
+      </tr>
+      <tr>
+         <td align="center"><a href="https://spothero.app.link/SR2PCoBNjF"><img align="center" alt="" border="0" class="g-img" src="http://res.cloudinary.com/spothero/image/upload/v1507647059/html-emails/email_assets/welcome_email/dl_icon.png" style="width: 100%; max-width: 600px; height: auto; font-family: 'Open Sans', Arial, sans-serif;font-size: 25px;line-height: 30px;color: #135aff; font-weight: bold;" width="600" /></a></td>
+      </tr>
+      <tr>
+		  <td class="mobile_text" bgcolor="#ffffff" style="padding:30px 60px 10px 60px; text-align: center; font-family:'Open Sans', sans-serif; font-size: 16px; line-height: 24px; color: #272727; font-weight: 100;">
+			  Download our airtrove airtime utility.  
+		  </td>
+	  </tr>
+	  <!-- 2 Even Columns : BEGIN -->
+            <tr>
+                <td bgcolor="#ffffff" align="center" valign="top" style="padding:10px 60px 30px 60px;">
+                    <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" width="80%">
+                        <tr>
+                            <!-- Column : BEGIN -->
+                            <td class="stack-column-center">
+                                <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td style="padding: 10px; text-align: center">
+                                            <img src="http://res.cloudinary.com/spothero/image/upload/v1507647898/html-emails/Download_on_the_App_Store_Badge_US-UK_135x40.png" width="160" alt="alt_text" border="0" class="fluid" style="height: auto; background: #ffffff; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #404040;">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!-- Column : END -->
+                            <!-- Column : BEGIN -->
+                            <td class="stack-column-center">
+                                <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td style="padding: 10px; text-align: center">
+                                            <img src="http://res.cloudinary.com/spothero/image/upload/v1507647898/html-emails/play-store.png" width="160" alt="alt_text" border="0" class="fluid" style="height: auto; background: #ffffff; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #404040;">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!-- Column : END -->
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- 2 Even Columns : END -->
+	</tbody>
+</table>
+<!-- Email Body : END --><!-- Email Footer : BEGIN -->
 
-    <link href="css/custom.css" rel="stylesheet" type="text/css" />
-
-
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Projecthub" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:title" content="Projecthub Terms and Conditions" />
-    <meta property="og:description" content="Manage your Github projects from the palm of your hand." />
-  </head>
-
-  <body id="terms-and-conditions">
-    <header class="header">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1">
-            <a href="/">
-              <img class="img-responsive logo" src="images/projecthub-logo.png" srcset="images/projecthub-logo@2x.png 2x, images/projecthub-logo@3x.png 3x" draggable="false" />
-            </a>
-          </div>
-          <div class="col col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1">
-            <h2 class="title">Airtime transactions at your fingertip.</h2>
-            <p class="subtitle">Convert Airtime to cash, between networks, recharge, pay bills with airtime, and Pay for groceries with your airtime. Credit in-app wallet with </p>
-            <a href="http://itunes.apple.com/us/app/projecthub/id1245190471" target="_blank">
-              <img class="store-button" src="images/appstore-button.png" srcset="images/appstore-button@2x.png 2x, images/appstore-button@3x.png 3x" draggable="false" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <div class="container-fluid">
-      <div class="row terms-and-conditions-section">
-        <div class="col-xs-12 text-center">
-          <h1 class="title">**AirTrove Privacy Policy**</h1> </br>
-          <h1 class="title">**Effective Date: 10th October, 2023**</h1>
-        </div>
-
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-          <div class="content">
-            <p>
-                Thank you for choosing AirTrove, a trusted airtime transactional platform that facilitates various airtime-related services, including converting airtime value to cash, transferring airtime between networks, and airtime recharge. At AirTrove, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data.
-
-                Please take the time to read this Privacy Policy carefully and understand how we handle your information. By accessing or using AirTrove's services, you consent to the practices described in this Privacy Policy.
-
-                <h4 class="section-title">**1. Information We Collect**</h4>
-                <p>**1.1 Personal Information**
-                We may collect the following types of personal information:
-
-                - Contact Information: Your name, email address, phone number, and postal address.
-                - Transactional Information: Details of airtime transactions, such as date, time, amount, and transaction history.
-                - Device Information: Information about the device you use to access AirTrove, including device type, operating system, and unique device identifiers.
-                - Location Information: With your consent, we may collect your device's precise location information to provide location-based services.
-                - Camera and USSD Codes: We may access your device's camera for KYC (Know Your Customer) purposes and may use USSD codes for airtime recharge and other transactional purposes.
-                </p>
-
-                <p>**1.2 Phone Contact**
-                 We may collect the following information from your phone number contact list:
-                  
-                 - Names
-                 - Phone Numbers
-                 - Email Addresses 
-                </p>
-                
-                <h4 class="section-title">**2. How We Use Your Information**</h4>
-
-                We use the collected information for the following purposes:
-                <p>**2.1 Service Delivery**
-                - To process airtime transactions and provide the requested services.
-                - To verify your identity and conduct KYC checks using your device's camera.
-                - To dial USSD codes on your device for airtime-related transactions.</p>
-                
-                <p>**2.2 Communication**
-                - To send transaction notifications, updates, and confirmations.
-                - To respond to your inquiries and provide customer support.
-                - To send you marketing communications with your consent.</p>
-                
-                <p> **2.3 Improve and Personalize Our Services**
-                - To analyze and improve the performance of our platform.
-                - To customize your experience on AirTrove based on your preferences and usage patterns.
-                - To develop new features and offerings.</p>
-               
-                <p> **2.4 Legal Compliance**
-                - To comply with applicable laws, regulations, and legal processes.
-                - To protect our rights, privacy, safety, and the security of our users.</p>
-               
-                <h4 class="section-title">**3. Data Security**</h4>
-                <p>We take data security seriously and implement reasonable security measures to protect your information from unauthorized access, disclosure, alteration, or destruction.</p>
-                
-                <h4 class="section-title">**4. Sharing of Information**</h4>
-                
-                <p>We may share your information with third parties in the following circumstances:
-
-                - With service providers and partners who assist us in delivering our services.
-                - To comply with legal obligations or respond to legal requests.
-                - In the event of a merger, acquisition, or sale of all or a portion of our assets.</p>
-                
-
-                <h4 class="section-title">**5. Your Choices**</h4>
-                <p>You have the following choices regarding your information:
-
-                - You can review and update your personal information in your AirTrove account settings.
-                - You can opt out of receiving marketing communications.
-                - You can withdraw your consent for location data collection at any time.
-                </p>
-                
-                <h4 class="section-title">**6. Children's Privacy**</h4>
-                <p>AirTrove is not intended for use by children under the age of 13. We do not knowingly collect personal information from children.
-                </p>
-                
-                <h4 class="section-title">**7. Changes to this Privacy Policy**</h4>
-                <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal and regulatory reasons. We will notify you of any material changes through our website or other means.</p>
-            </p>
-
-            <h4 class="section-title">**8. Contact Us**</h4>
-            <p>
-              You understand that AirTrove may access and disclose Customer Data or otherwise provide third parties access to it for the following reasons:
-            </p>
-            <p>
-                If you have any questions, concerns, or requests regarding this Privacy Policy or your personal information, please contact us at <b><tel>+2349061450858</tel></b>.
-                
-                By using AirTrove, you agree to the terms and conditions outlined in this Privacy Policy. Please ensure that you review this Privacy Policy regularly to stay informed about how we handle your data.
-                
-                <h5><p>Last Updated: 12th February, 2024</p></h5>
-                
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="container-fluid">
-        <div class="row text-center">
-          <h2 class="title">Airtime Transactions are your finger tips</h2>
-        </div>
-        <div class="row footer-logo-container">
-          <div class="col col-xs-12 text-center">
-            <img src="images/projecthub-footer-logo.png" srcset="images/projecthub-footer-logo@2x.png 2x, images/projecthub-footer-logo@3x.png 3x" draggable="false" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col col-sm-4 col-md-4 text-center link-container">
-            <a class="links" href="about.html">About AirTrove</a>
-            <br>
-            <a class="links" href="privacy-policy.html">Terms and Conditions</a>
-          </div>
-          <div class="col col-xs-12 col-sm-4 col-md-3 text-center">
-            <a href="https://xmartlabs.com" target="_blank">
-              <img src="images/xmartlabs-logo-white.png" srcset="images/xmartlabs-logo-white@2x.png 2x, images/xmartlabs-logo-white@3x.png 3x" draggable="false" />
-            </a>
-          </div>
-        </div>
-        <div class="row text-center">
-          <p class="copyright">airtrove - 2024 all rights reserved</p>
-        </div>
-      </div>
-    </footer>
-  </body>
+<table align="center" aria-hidden="true" border="0" cellpadding="0" cellspacing="0" class="email-container" role="presentation" style="margin: auto;" width="600">
+   <tbody>
+      <tr>
+         <td align="center" style="border-collapse: collapse;mso-line-height-rule: exactly;" valign="top">
+         <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0px;mso-table-rspace: 0px;" width="100%">
+            <tbody>
+               <tr>
+                  <td class="em_spacer" style="border-collapse: collapse;mso-line-height-rule: exactly;" width="44"></td>
+                  <td align="center" style="border-collapse: collapse;mso-line-height-rule: exactly;" valign="top">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0px;mso-table-rspace: 0px;" width="100%">
+                     <tbody>
+                        <tr>
+                           <td class="em_height" height="32" style="border-collapse: collapse;mso-line-height-rule: exactly;"></td>
+                        </tr>
+                        <tr>
+                           <td align="center" style="border-collapse: collapse;mso-line-height-rule: exactly;" valign="top">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0px;mso-table-rspace: 0px;" width="212">
+                              <tbody>
+                                 <tr>
+                                    <td align="center" style="border-collapse: collapse;mso-line-height-rule: exactly;" valign="top" width="44"><a href="${clickthrough('soc_twitter')}" style="text-decoration: none;border-collapse: collapse;mso-line-height-rule: exactly;" target="_blank"><img alt="Twitter" border="0" height="44" src="http://res.cloudinary.com/spothero/image/upload/v1502917835/html-emails/email_assets/SH4B/social-icons-twitter.png" style="display: block;font-family: 'Open Sans', Arial, sans-serif;font-size: 14px;line-height: 18px;color: #404040;font-weight: bold;border: 0 !important;outline: none !important; max-width:44px;" width="44" /></a></td>
+                                    <td style="border-collapse: collapse;mso-line-height-rule: exactly;" width="12"></td>
+                                    <td align="center" style="border-collapse: collapse;mso-line-height-rule: exactly;" valign="top" width="44"><a href="${clickthrough('soc_youtube')}" style="text-decoration: none;border-collapse: collapse;mso-line-height-rule: exactly;" target="_blank"><img alt="YouTube" border="0" height="44" src="http://res.cloudinary.com/spothero/image/upload/v1502917835/html-emails/email_assets/SH4B/social-icons-ytube.png" style="display: block;font-family: 'Open Sans', Arial, sans-serif;font-size: 14px;line-height: 18px;color: #404040;font-weight: bold;border: 0 !important;outline: none !important; max-width:44px;" width="44" /></a></td>
+                                    <td style="border-collapse: collapse;mso-line-height-rule: exactly;" width="12"></td>
+                                    <td align="center" style="border-collapse: collapse;mso-line-height-rule: exactly;" valign="top" width="44"><a href="${clickthrough('soc_instagram')}" style="text-decoration: none;border-collapse: collapse;mso-line-height-rule: exactly;" target="_blank"><img alt="Instagram" border="0" height="44" src="http://res.cloudinary.com/spothero/image/upload/v1502917835/html-emails/email_assets/SH4B/social-icons-insta.png" style="display: block;font-family: 'Open Sans', Arial, sans-serif;font-size: 14px;line-height: 18px;color: #404040;font-weight: bold;border: 0 !important;outline: none !important; max-width:44px;" width="44" /></a></td>
+                                    
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="em_height" height="30" style="border-collapse: collapse;mso-line-height-rule: exactly;"></td>
+                        </tr>
+                        <tr>
+							<td align="center" class="em_font13" style="border-collapse: collapse;mso-line-height-rule: exactly;color: #404040;font-family: 'Open Sans', Arial, sans-serif;font-size: 13px;line-height: 20px;text-decoration: none;" valign="top"><a href="#" style="color:#404040; text-decoration: none;">Lekki Phase 1 &nbsp;|&nbsp; Nigeria, Lagos - 205102&nbsp;|&nbsp;</a><span class="em_brk" style="border-collapse: collapse;mso-line-height-rule: exactly;"></span><strong><a class="em_font13" href="tel:+2349061450858" style="border-collapse: collapse;mso-line-height-rule: exactly;color: #404040;font-family: 'Open Sans', Arial, sans-serif;font-size: 13px;line-height: 20px;text-decoration: none;">(234) 906-145-0858</a></strong>&nbsp;|&nbsp; <span style="font-weight: bold;text-decoration: underline;color: #404040;border-collapse: collapse;mso-line-height-rule: exactly;"><a href="${clickthrough('faq')}" style="font-weight: bold;text-decoration: underline;color: #404040;border-collapse: collapse;mso-line-height-rule: exactly;" target="_blank">FAQ</a></span></td>
+                        </tr>
+                        <tr>
+                           <td height="20" style="font-size: 1px;line-height: 1px;border-collapse: collapse;mso-line-height-rule: exactly;"></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+                  <td class="em_spacer" style="border-collapse: collapse;mso-line-height-rule: exactly;" width="44"></td>
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+      <tr>
+         <td bgcolor="#656565" height="1" style="font-size: 0px;line-height: 0px;border-collapse: collapse;mso-line-height-rule: exactly;"><img alt="" border="0" height="1" src="https://static.cdn.responsys.net/i2/responsysimages/content/spothero/spacer.gif" style="display: block;border: 0 !important;outline: none !important;" width="1" /></td>
+      </tr>
+      <tr>
+         <td class="em_height" height="23" style="border-collapse: collapse;mso-line-height-rule: exactly;"></td>
+      </tr>
+      
+      <tr>
+         <td class="em_height" height="23" style="border-collapse: collapse;mso-line-height-rule: exactly;"></td>
+      </tr>
+   </tbody>
+</table>
+<!-- Email Footer : END --></center>
+</body>
 </html>
